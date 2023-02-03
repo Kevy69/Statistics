@@ -8,16 +8,6 @@ order:
 
 
 todo:
-
-    llia kickoff
-
-    assignment:
-        tidy up plots
-        add more questions/answeres?
-        do Konfidensintervall
-
-
-
     1. watch missed presentation
 
     chap 6
