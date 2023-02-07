@@ -9,6 +9,8 @@ order:
 
 todo:
     1. watch missed presentation
+    2. llia notes
+    3. maaaaaaaaaaaaaaaaaths
 
     chap 6
     document chap 6
@@ -21,71 +23,60 @@ todo:
 
 
 
-    chap1:
-        ask 1:4 c
-        ask 1:4 d (std on calc)
+    chap 1:
+        learn mean, median, mode, range.
+        data types.
 
+        1:1
         1:3
-        1:4 c
-        1:5 a
+        1:5
 
     chap 2:
         betingad sannolikhet
         bayers theorem
-        combinations/permutations
 
+        2:1 b
+        2:2
         2:3
         2:10 g
         2:13
         2:14
-        2:15
+        2:15 (got correct, but do again)
         2:17
 
     chap 3:
-        ask 3:6
+        ask now to answere in 3:1 (and beyond)
         ask num of distributions you need to know.
         fix distribution definitions.
         learn when to apply what distribution.
-        go through code.
-        go through again.
+        write down when to use distributions on formel blad
 
         3:15 (last part)
         3:16
+        3:20
+        3:21
         3:22
     
     chap 4:
+        4:19
         4:36
     
     chap 5:
-        5:7 c
+        5:7 ...
+        5:14 ...
         5:18
 
     chap 6:
+        ask why proportion Konfidensintervall not working (e.g 6:17)
         ask "interval skatta vs medelfel vs ..etc"
+        ask "does Ci need to be in size order? e.g: Ci[10.2, 5.4]"
+        ask 6:10
 
 
 
 
 
-words/remember:
-
-    data types:
-        nominal
-        ordinal
-        interval
-        ratio (kvot)
-    
-    basic statistical operations:
-        Central tendency (Centraltendens/Lägesmått):
-            mode (typvärde)
-            median (median)
-            mean (medelvärde)
-            range (variationsvidd)
-
-        Measure of dispersion (Spridningsmått):
-            variance (varians)
-            standard deviation (Standardavvikelse)
-
+words/remember:    
     Complement
 
     mutually exclusive (disjunkt/ömsesidigt uteslutande)
@@ -99,32 +90,15 @@ words/remember:
 
 
 
-definitions:
 
-    Chap 1 & 2:
+Chap 1:
+    rules:
+        data types:
+            nominal
+            ordinal
+            interval
+            ratio (kvot)
 
-        mode:
-            Most repeated number
-        
-        median:
-            number in the middle of the sorted set. if the set has an even number of
-            values, than take the mean of the middle values.
-        
-        mean:
-            the average value. Add all numbers and divide by length
-        
-        range:
-            largest value minus smallest value.
-        
-        variance:
-            A measurement of how far each number in a data set is from the mean (average),
-            and thus from every other number in the set.
-            
-            take sample standard deviation equation and remove square root sign.
-        
-        standard deviation:
-            FIX
-        
         data types:
             nominal:
                 FIX
@@ -137,14 +111,37 @@ definitions:
 
             ratio (kvot):
                 FIX
-        
-        complement:
-            when P(A) + P(B) = 1
-        
-        mutually exclusive:
-            When P(A) + P(B) <= 1.
 
+        mean:
+            the average value. Add all numbers and divide by length
+
+        median:
+            number in the middle of the sorted set. if the set has an even number of
+            values, than take the mean of the middle values.
+
+        mode:
+            Most repeated number
         
+        range:
+            largest value minus smallest value.
+        
+
+        basic statistical operations:
+            Central tendency (Centraltendens/Lägesmått):
+                mode (typvärde)
+                median (median)
+                mean (medelvärde)
+                range (variationsvidd)
+
+            Measure of dispersion (Spridningsmått):
+                variance (varians)
+                standard deviation (Standardavvikelse)
+
+
+
+Chap 2:
+
+    rules:
         probability space:
             the space of all possible (probable) outcomes, of which an event(händelse) is a subset(delmängd)
             of the probability space.
@@ -177,25 +174,26 @@ definitions:
 
             difference:
                 All the different values between A and B.
+            
+
+            Bayes theorem:
+                FIX
+            
+            element grouping:
+                repetetive permutations
+                non-repetetive permutations
+                combinations
         
-
-        Bayes theorem:
-            FIX
         
-        element grouping:
-            repetetive permutation
-            permutation
-            combination
+        complement:
+            when P(A) + P(B) = 1
+        
+        mutually exclusive:
+            When P(A) + P(B) <= 1.
 
 
 
-
-
-
-methods/examples:
-
-    Chap 1 & 2:
-
+    methods/examples:
         union:
             # Logic
             A = [1, 2, 3]
@@ -265,212 +263,212 @@ methods/examples:
 
 
 
-    Chap 3:
+Chap 3:
 
-        remember/rules:
-            1. When calculatikng the mass function, disregard x's even exponent sum reaches 0.
-            2. When calculatikng the mass function and inverting, dont count the first diggit of x
-               (e.g if P(x >= 5), skip 5 when inverting)
+    remember/rules:
+        1. When calculatikng the mass function, disregard x's even exponent sum reaches 0.
+        2. When calculatikng the mass function and inverting, dont count the first diggit of x
+            (e.g if P(x >= 5), skip 5 when inverting)
 
-        Binomial distribution:
-            application:
-                the probability of 3 sales happening under one shift, where the probability
-                of a single sale is x.
+    Binomial distribution:
+        application:
+            the probability of sales happening under one shift, where the probability
+            of a single sale is x.
 
-            constants:
-                n = num of tries
-                p = probability per try
-                q = for equation, not important
-                x = what where tryna calculate
+        constants:
+            n = num of tries
+            p = probability per try
+            q = for equation, not important
+            x = what where tryna calculate
 
-            E(X) = "Väntevärdet för binomialfördelning"
-            E(V) = "Standardavvikelse för binomialfördelning" but remove square root
-            S(V) = "Standardavvikelse för binomialfördelning"
+        E(X) = "Väntevärdet för binomialfördelning"
+        E(V) = "Standardavvikelse för binomialfördelning" but remove square root
+        S(V) = "Standardavvikelse för binomialfördelning"
 
-            # Calculate P(X >= 4)
-            # Run "massfunktionen för binomialfördelning" equation x times,
-            # Where x follows the given expression, than sum all the output numbers.
-
-
-        Poisson distribution:
-            application:
-                A formula used to estimate the value of P(X = n) for binomial distributions where
-                n > 10
-                p < 0.1
-                aka
-                0.01 < E(X) < 50
-                
-                note: remember, E(X) = n * p
-
-                which makes calculating the varius Binomial distribution values very difficult or
-                simply impossible.
-
-            constants:
-                µ = n * p
-                X = given
-        
-
-        Geometric distribution:
-            application:
-                the number of calls needed to get 3 sales under one shift, where the probability
-                of a single sale is x.
-
-            constants:
-                p
-                x
-        
-            E(X) = "Väntevärdet för geometrisk fördelning"
-            V(X) = "Standardavvikelse för geometrisk fördelning" but remove square root
-            S(X) = "Standardavvikelse för geometrisk fördelning"
+        # Calculate P(X >= 4)
+        # Run "massfunktionen för binomialfördelning" equation x times,
+        # Where x follows the given expression, than sum all the output numbers.
 
 
-        Negative Geometric distribution:
-            application:
-                FIX
-
-            constants:
-                FIX
-        
-
-        Hypergeometric distribution:
-            application:
-                the probability of getting 3 in a row, given that we know how many sales we would randomly get
-                if we called 10 ppl, where the probability of getting a single sale is x.
-                (remember ball problem)
-
-            constants:
-                n = number of bernoulli trials (e.g num balls picked up total)
-                R = number of black balls
-                N = total number of balls (probabilities)
-                x = number of black balls you picked up in a row
-
-            # Note that if x = 4, than what where really trying to do is calculate the probability of
-            # getting 4 black balls in a row given that you pull each ball out one round at a time.
-            # to do this, we need to calculate the probabilities of getting 4, 3, 2 and 1 black balls
-            # respectively in a row, than sum the probabilities. What where effectively doing is
-            # re-calculating the probability for each possible event (4, 3, 2, or 1 balls) in order to
-            # obtain the probability.
-        
-            E(X) = "Väntevärdet för hypergeometrisk fördelning"
-            V(X) = "Standardavvikelse för hypergeometrisk fördelning" but remove square root
-            S(X) = "Standardavvikelse för hypergeometrisk fördelning"
-        
-
-    Chap 4:
-        remember/rules:
-            1. When dealing with probabilities, you can flip the sign (e.g > to <)
-               by getting the complement (e.g 1 - P(Z > 1.41) = 0.0793)
+    Poisson distribution:
+        application:
+            A formula used to estimate the value of P(X = n) for binomial distributions where
+            n > 10
+            p < 0.1
+            aka
+            0.01 < E(X) < 50
             
-            2. When dealing with values (e.g P(Z > z) = 0.75), you can flip the sign of z to flip the </>.
-               This works because the normal distribution is symmetric.
-            
-            3. when breaking out things like P(-0.18 < Z < 1.55), break out with Z's first.
-               e.g: P(Z < -0.18) & P(Z < 1.41)
-            
-        Solve for:
+            note: remember, E(X) = n * p
 
-            P(Z < -0.55):
-                use the table, thats it
+            which makes calculating the varius Binomial distribution values very difficult or
+            simply impossible.
 
-
-            P(Z > 1.41):
-                Use the table, get the complement to flip sign
-
-
-            P(-0.18 < Z < 1.55):
-                breakout into
-                P(Z < -0.18)
-                P(Z < 1.55)
-
-                calculate both and subtract the larger larger slice by the smaller in order to get the middle slice
-                0.9394 - 0.4286 = 0.5108
-
-
-            P(Z > z) = 0.75:
-                use the table, get value of opposit sign
-                P(Z < 0.67) = 0.75
-
-                Flip the sign by simply flipping the sign of the z value
-                P(Z > -0.67) = 0.75
-
-
-            P(-z < Z < z) = 0.57:
-                use
-                    P(Z < z) = a + 1 / 2
-                to convert to
-                    P(Z < z) = 0.785
-                
-                feed in values
-                P(-0.785 < Z < 0.785) = 0.57
-
-
-            μ = 32, σ = 5, P(X̄ > 35):
-
-                Convert to a standard normal distribution by using the "Standard z-värde" equation
-                (Note: equation only used for populations, not samples)
-                P(Z > 0.6)
-
-                Solve
-                1 - P(Z > 0.6) = 0.2743
-
-
-    Chap 5:
-        remember:
-            write everything down, find keywords
-
-        Solve for:
-            # P(X̄ > 243)
-            Convert to a standard normal distribution by using the
-            "CENTRALA GRÄNSVÄRDESSATSEN => standardiserad stickprovsmedelvärde ..." equation
-            (Note: equation only used for samples, not population)
-            P(Z > 0.75)
-
-            Solve like usual
+        constants:
+            µ = n * p
+            X = given
     
-    Chap 6:
-        Konfidensintervall for the mean with known (population) sigma (std):
 
-            constants:
-                X (known) = measurments. e.g 22, 34, 18, 16...
-                X̄ = mean of measurments
-                n (known) = sample size
-                α = inverse of confidence you wanna calculate with
-                σ (known) = standard deviation of population
+    Geometric distribution:
+        application:
+            the number of calls needed to get 3 sales under one shift, where the probability
+            of a single sale is x.
 
-            solve:
-                1. find X̄ by taking the mean of X
-                2. find n by asking what the stickprov size is
-                3. find alpha by taking 1 - the given confidence interval
-
-                4. get the value of z by dividing a and looking at the Z-table
-                5. calculate both answeres and answere in 95% CI: [ans1, ans2] form
+        constants:
+            p
+            x
+    
+        E(X) = "Väntevärdet för geometrisk fördelning"
+        V(X) = "Standardavvikelse för geometrisk fördelning" but remove square root
+        S(X) = "Standardavvikelse för geometrisk fördelning"
 
 
-        Konfidensintervall for the mean with unknown (population) sigma (std):
+    Negative Geometric distribution:
+        application:
+            FIX
 
-            constants:
-                X (known) = measurments. e.g 22, 34, 18, 16...
-                X̄ = mean of measurments
-                n (known) = sample size
-                α = inverse of confidence you wanna calculate with
-                s = estimated standard deviation of population (using sample data)
+        constants:
+            FIX
+    
 
-            solve:
-                1. find X̄ by taking the mean of X
-                2. find n by asking what the stickprov size is
-                3. find alpha by taking 1 - the given confidence interval
-                4. find s by using the "stickprovsstandardavvikelse" equation
-                
-                5. get the value of t by dividing α and looking at the Z-table (dont forget the degrees of freedom)
-                6. calculate both answeres and answere in 95% CI: [ans1, ans2] form
+    Hypergeometric distribution:
+        application:
+            the probability of getting 3 in a row, given that we know how many sales we would randomly get
+            if we called 10 ppl, where the probability of getting a single sale is x.
+            (remember ball problem)
+
+        constants:
+            n = number of bernoulli trials (e.g num balls picked up total)
+            R = number of black balls
+            N = total number of balls (probabilities)
+            x = number of black balls you picked up in a row
+
+        # Note that if x = 4, than what where really trying to do is calculate the probability of
+        # getting 4 black balls in a row given that you pull each ball out one round at a time.
+        # to do this, we need to calculate the probabilities of getting 4, 3, 2 and 1 black balls
+        # respectively in a row, than sum the probabilities. What where effectively doing is
+        # re-calculating the probability for each possible event (4, 3, 2, or 1 balls) in order to
+        # obtain the probability.
+    
+        E(X) = "Väntevärdet för hypergeometrisk fördelning"
+        V(X) = "Standardavvikelse för hypergeometrisk fördelning" but remove square root
+        S(X) = "Standardavvikelse för hypergeometrisk fördelning"
+
+
+Chap 4:
+    remember/rules:
+        1. When dealing with probabilities, you can flip the sign (e.g > to <)
+            by getting the complement (e.g 1 - P(Z > 1.41) = 0.0793)
         
+        2. When dealing with values (e.g P(Z > z) = 0.75), you can flip the sign of z to flip the </>.
+            This works because the normal distribution is symmetric.
+        
+        3. when breaking out things like P(-0.18 < Z < 1.55), break out with Z's first.
+            e.g: P(Z < -0.18) & P(Z < 1.41)
+        
+    Solve for:
 
-        Konfidensintervall for the proportion:
-            constants:
-                p̅ = probability, e.g of "number of sd'are in a study"
-                n (known) = sample size
-                α = inverse of confidence you wanna calculate with
+        P(Z < -0.55):
+            use the table, thats it
+
+
+        P(Z > 1.41):
+            Use the table, get the complement to flip sign
+
+
+        P(-0.18 < Z < 1.55):
+            breakout into
+            P(Z < -0.18)
+            P(Z < 1.55)
+
+            calculate both and subtract the larger larger slice by the smaller in order to get the middle slice
+            0.9394 - 0.4286 = 0.5108
+
+
+        P(Z > z) = 0.75:
+            use the table, get value of opposit sign
+            P(Z < 0.67) = 0.75
+
+            Flip the sign by simply flipping the sign of the z value
+            P(Z > -0.67) = 0.75
+
+
+        P(-z < Z < z) = 0.57:
+            use
+                P(Z < z) = a + 1 / 2
+            to convert to
+                P(Z < z) = 0.785
             
-            solve:
-                1. get the value of z by dividing α and looking at the Z-table
-                2. calculate both answeres and answere in 95% CI: [ans1, ans2] form
+            feed in values
+            P(-0.785 < Z < 0.785) = 0.57
+
+
+        μ = 32, σ = 5, P(X̄ > 35):
+
+            Convert to a standard normal distribution by using the "Standard z-värde" equation
+            (Note: equation only used for populations, not samples)
+            P(Z > 0.6)
+
+            Solve
+            1 - P(Z > 0.6) = 0.2743
+
+
+Chap 5:
+    remember:
+        write everything down, find keywords
+
+    Solve for:
+        # P(X̄ > 243)
+        Convert to a standard normal distribution by using the
+        "CENTRALA GRÄNSVÄRDESSATSEN => standardiserad stickprovsmedelvärde ..." equation
+        (Note: equation only used for samples, not population)
+        P(Z > 0.75)
+
+        Solve like usual
+
+Chap 6:
+    Konfidensintervall for the mean with known (population) sigma (std):
+
+        constants:
+            X (known) = measurments. e.g 22, 34, 18, 16...
+            X̄ = mean of measurments
+            n (known) = sample size
+            α = inverse of confidence you wanna calculate with
+            σ (known) = standard deviation of population
+
+        solve:
+            1. find X̄ by taking the mean of X
+            2. find n by asking what the stickprov size is
+            3. find alpha by taking 1 - the given confidence interval
+
+            4. get the value of z by dividing a and looking at the Z-table
+            5. calculate both answeres and answere in 95% CI: [ans1, ans2] form
+
+
+    Konfidensintervall for the mean with unknown (population) sigma (std):
+
+        constants:
+            X (known) = measurments. e.g 22, 34, 18, 16...
+            X̄ = mean of measurments
+            n (known) = sample size
+            α = inverse of confidence you wanna calculate with
+            s = estimated standard deviation of population (using sample data)
+
+        solve:
+            1. find X̄ by taking the mean of X
+            2. find n by asking what the stickprov size is
+            3. find alpha by taking 1 - the given confidence interval
+            4. find s by using the "stickprovsstandardavvikelse" equation
+            
+            5. get the value of t by dividing α and looking at the Z-table (dont forget the degrees of freedom)
+            6. calculate both answeres and answere in 95% CI: [ans1, ans2] form
+    
+
+    Konfidensintervall for the proportion:
+        constants:
+            p̅ = probability, e.g of "number of sd'are in a study"
+            n (known) = sample size
+            α = inverse of confidence you wanna calculate with
+        
+        solve:
+            1. get the value of z by dividing α and looking at the Z-table
+            2. calculate both answeres and answere in 95% CI: [ans1, ans2] form
